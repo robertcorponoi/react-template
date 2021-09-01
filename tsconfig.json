@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        // Indicates which JS features are downleveled and which are left intact.
+        "target": "es6",
+        // Defines which type definitions for built in JS APIs are available.
+        "lib": ["dom", "dom.iterable", "esnext"],
+        // Allows JavaScript files to be imported in the project instead of just `.ts` and `.tsx`.
+        "allowJs": true,
+        // Skips type checking of declaration files. This can save time during compilation at the expensive of type-system accuracy.
+        "skipLibCheck": true,
+        // Don't treat CommonJS/AMD/UMD modules like ES6 modules.
+        "esModuleInterop": true,
+        // Allows us to write an import like `import React from "react";` instead of `import * as React from "react";`.
+        "allowSyntheticDefaultImports": true,
+        // Enables a wide range of type checking behavior that results in stronger guarantees of program correctness.
+        "strict": true,
+        // Show errors if a program tries to include a file by a casing different from the casing on disk.
+        "forceConsistentCasingInFileNames": true,
+        // Ensures that non-empty case inside a switch statement includes either `break` or `return`.
+        "noFallthroughCasesInSwitch": true,
+        // Sets the module system of the program. See https://www.typescriptlang.org/docs/handbook/modules.html for more information.
+        "module": "esnext",
+        // Specifies the module resolution strategy. This will almost always be "node".
+        "moduleResolution": "node",
+        // Allows importing modules with a `.json` extension.
+        "resolveJsonModule": true,
+        // Warns us if we write code that can't be correctly interpreted by a single-file transpilation process.
+        "isolatedModules": true,
+        // Does not emit compiler output files like JavaScript source code, source-maps, or declarations.
+        // This makes room for another tool like Babel to handle converting the TypeScript file to a file which can run inside a JavaScript environment.
+        "noEmit": false,
+        // Controls how JSX constructs are emitted in JavaScript files.
+        // Using `react-jsx` emits `.js` files with the JSX changed to `_jsx` calls.
+        "jsx": "react-jsx"
+    },
+    // Specifies an array of filenames or patterns to include in the program.
+    "include": ["src"]
+}

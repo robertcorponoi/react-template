@@ -1,0 +1,13 @@
+{
+    "presets": [
+        // Adds support for ES6+
+        // https://babeljs.io/docs/en/babel-preset-env
+        "@babel/env",
+        // Adds support for JSX
+        // https://babeljs.io/docs/en/babel-preset-react
+        "@babel/preset-react",
+        // Adds support for TS and TSX
+        // https://babeljs.io/docs/en/babel-preset-typescript
+        "@babel/preset-typescript"
+    ]
+}
