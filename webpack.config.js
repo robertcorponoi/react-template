@@ -76,10 +76,8 @@ module.exports = (env) => {
         // The options for the Webpack dev server.
         // This tells Webpack to serve everything from our public directory to localhost:3000.
         devServer: {
-            contentBase: path.join(__dirname, "public/"),
             port: 3000,
-            publicPath: "http://localhost:3000/dist/",
-            hotOnly: true,
+            hot: true,
         },
         plugins: [
             // The plugins needed to perform "Fast Refresh" which allows us to update components and see the results without refreshing.
