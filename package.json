@@ -44,7 +44,7 @@
         "eslint-plugin-react": "^7.25.1",
         "postcss": "^8.4.6",
         "postcss-loader": "^6.2.1",
-        "prettier": "^2.4.1",
+        "prettier": "^2.5.1",
         "react-refresh": "^0.10.0",
         "react-refresh-typescript": "^2.0.2",
         "style-loader": "^3.2.1",
