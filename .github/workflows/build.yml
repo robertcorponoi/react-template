@@ -1,0 +1,29 @@
+# The events on GitHub that will cause the workflow to be executed.
+on: [pull_request]
+
+# The name of the workflow to be displayed on the repository's actions page.
+name: CI
+
+# A list of the jobs that will run during the workflow. Each job runs 
+# independently of the others and on different virtual environments.
+# We have a single job, which:
+# 1. Runs `npm install` to install the dependencies in the React client.
+# 2. Runs `npm build` to build the React client.
+jobs:
+    react:
+        name: Build React App
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            # GitHub action for Node.JS.
+            # https://github.com/actions/setup-node
+            - uses: actions/setup-node@v2
+              with:
+                node-version: '16.13.2'
+                check-latest: true
+            # Run `npm ci` in the React client.
+            - name: Install dependencies
+              run: npm ci
+            # Lastly build the React client.
+            - name: Build the React app
+              run: npm run build:prod
