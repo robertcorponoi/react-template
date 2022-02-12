@@ -19,7 +19,6 @@
     "author": "Robert Corponoi",
     "license": "MIT",
     "dependencies": {
-        "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
         "@reduxjs/toolkit": "^1.7.2",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
@@ -32,6 +31,7 @@
         "@babel/preset-env": "^7.16.11",
         "@babel/preset-react": "^7.16.7",
         "@babel/preset-typescript": "^7.16.7",
+        "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
         "@types/react": "^17.0.39",
         "@types/react-dom": "^17.0.11",
         "@types/react-redux": "^7.1.22",
