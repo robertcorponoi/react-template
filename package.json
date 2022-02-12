@@ -20,11 +20,11 @@
     "license": "MIT",
     "dependencies": {
         "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
-        "@reduxjs/toolkit": "^1.6.1",
+        "@reduxjs/toolkit": "^1.7.2",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-redux": "^7.2.4",
-        "redux-thunk": "^2.3.0"
+        "redux-thunk": "^2.4.1"
     },
     "devDependencies": {
         "@babel/cli": "^7.17.0",
