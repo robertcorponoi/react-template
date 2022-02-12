@@ -19,7 +19,7 @@
     "author": "Robert Corponoi",
     "license": "MIT",
     "dependencies": {
-        "@pmmmwh/react-refresh-webpack-plugin": "^0.5.0-rc.5",
+        "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
         "@reduxjs/toolkit": "^1.6.1",
         "@types/react-redux": "^7.1.18",
         "react": "^17.0.2",
