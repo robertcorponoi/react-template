@@ -77,7 +77,7 @@ module.exports = (env) => {
         // This tells Webpack to serve everything from our public directory to localhost:3000.
         devServer: {
             port: 3000,
-            hot: true,
+            historyApiFallback: true,
         },
         plugins: [
             // The plugins needed to perform "Fast Refresh" which allows us to update components and see the results without refreshing.
