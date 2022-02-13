@@ -8,6 +8,8 @@ The template, which is by no means a perfect React development experience and is
 
 - [Tools](#tools)
 - [Visual Studio Code Extensions](#visual-studio-code-extensions)
+- [Concepts](#concepts)
+    - [Routing](#routing)
 - [Scripts](#scripts)
 - [GitHub Actions](#github-actions)
 - [License](#license)
@@ -32,6 +34,24 @@ The follow extensions for code formatting and linting should be recommended to y
 
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+## Concepts
+
+The following are concepts used throughout the App. This documentation is a work in progress so check back regularly for updates or post an issue for a concept that you think is missing documentation.
+
+### Routing
+
+The routing for the app is handled with [react-router](https://github.com/remix-run/react-router). More specifically, we use react-router-dom v6, which has helpful documentation [here](https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md).
+
+The routing for the app is fairly simple. The various parts are explained below:
+
+- In the `src/App.tsx` file, we we everything in a `BrowserRouter` component. This component is from `react-router-dom` and it is used to connect it to our app's browser URL. Every `<Route>` and `<Link>` component has to be defined within this component so putting it as the wrapper to everything else in the `<App>` is how we achieve that.
+
+- Also in the `src/App.tsx` file, we define our `<Route>` components within a `<Routes>` component, both from `react-router-dom`. This is where we define the routes of the application. Here we have two simple routes to route to our home and about pages. Each `<Route>` takes the route and component to render when that route is navigated to. We also have a third route, which is a catch-all route that will be used whenever the user navigates to a route that is not defined. We put a 404 page here in the template but you can handle it any way you wish.
+
+- In the `src/components/Navbar.tsx` component, we create a simple navbar that has the links for the application as `<Link>` components, which are from `react-router-dom`. 
+
+**Note:** Notice that in the `src/App.tsx` file, the `<Navbar>` component is outside of the `<Routes>` component. Anything outside of the `<Routes>` component will be displayed on every route so it is a good place to put a navbar, footer, or anything else that should appear on every page.
 
 ## Scripts
 
