@@ -12,6 +12,7 @@ The template, which is by no means a perfect React development experience and is
     - [Routing](#routing)
 - [Scripts](#scripts)
 - [GitHub Actions](#github-actions)
+- [Keeping Up To Date With Template Changes](#keeping-up-to-date-with-template-changes)
 - [License](#license)
 
 ## Tools
@@ -74,6 +75,28 @@ The workflow at `.github/workflows/build.yml` will run whenever a pull request i
 This action will install the dependencies and attempt to create a production build of the React app.
 
 More actions are planned to be added for deployment of the app.
+
+## Keeping Up To Date With Template Changes
+
+This template will be updated when dependencies need updating, new packages are added, and new or better concepts are found. To keep up with changes you might want from the template:
+
+1. Add the template repository as a remote:
+
+```sh
+git remote add template git@github.com:robertcorponoi/react-template.git
+```
+
+2. Fetch the changes:
+
+```sh
+git fetch --all
+```
+
+3. Merge the changes from the main branch of the template repository:
+
+```sh
+git merge template/main
+```
 
 ## License
 
