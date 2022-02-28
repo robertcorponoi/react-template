@@ -1,3 +1,4 @@
+/** @type {import("tailwindcss/tailwind-config").TailwindConfig} */
 module.exports = {
     // An array of paths to the template files that should be purged of unused styles.
     // https://tailwindcss.com/docs/optimizing-for-production
