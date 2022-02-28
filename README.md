@@ -10,6 +10,7 @@ The template, which is by no means a perfect React development experience and is
 - [Visual Studio Code Extensions](#visual-studio-code-extensions)
 - [Concepts](#concepts)
     - [Routing](#routing)
+    - [TailwindCSS](#tailwindcss)
 - [Scripts](#scripts)
 - [GitHub Actions](#github-actions)
 - [Keeping Up To Date With Template Changes](#keeping-up-to-date-with-template-changes)
@@ -53,6 +54,23 @@ The routing for the app is fairly simple. The various parts are explained below:
 - In the `src/components/Navbar.tsx` component, we create a simple navbar that has the links for the application as `<Link>` components, which are from `react-router-dom`. 
 
 **Note:** Notice that in the `src/App.tsx` file, the `<Navbar>` component is outside of the `<Routes>` component. Anything outside of the `<Routes>` component will be displayed on every route so it is a good place to put a navbar, footer, or anything else that should appear on every page.
+
+## TailwindCSS
+
+[TailwindCSS](https://tailwindcss.com/) is an opinionated way of styling your components. Instead of using CSS files or passing styles in as JavaScript objects, Tailwind lets you apply styles via class names. Simple class names such as `flex items-center` allow you to easily apply styles directly in the markup. Tailwind also makes responsive styling easy by use of breakpoints. A simple example is text that is larger as the screen size increases like so: `text-sm md:text-base lg:text-lg xl:text-xl`.
+
+You might find that the default Tailwind values aren't enough for your application. A common example is needing more colors than are provided by Tailwind. This can be accomplished by extending the `tailwind.config.js` file as shown in the [configuration documentation](https://tailwindcss.com/docs/configuration).
+
+You can also use Tailwind configuration values by importing the Tailwind config from the utils. This enables you to use any custom styles you passed to the configuration file and also the default Tailwind styles. An example of getting a color from the Tailwind config looks like:
+
+```ts
+import tailwindConfig from "../path/to/utils/tailwind-config";
+
+// This will log the default Tailwind gray 500 color.
+console.log(tailwindConfig.theme.colors.gray["500"]);
+```
+
+We also use [PostCSS](https://postcss.org/) to purge the Tailwind config so that any unused class names are removed from the final build of your application, which keeps styling bundle sizes to a minimum.
 
 ## Scripts
 

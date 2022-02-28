@@ -9,5 +9,11 @@
         // Adds support for TS and TSX
         // https://babeljs.io/docs/en/babel-preset-typescript
         "@babel/preset-typescript"
+    ],
+    "plugins": [
+        // Enables us to use compile-time libraries. We currently use this for 
+        // babel-plugin-preval https://github.com/kentcdodds/babel-plugin-preval
+        // https://github.com/kentcdodds/babel-plugin-macros
+        "macros"
     ]
 }

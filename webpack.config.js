@@ -30,7 +30,7 @@ module.exports = (env) => {
                 // Tell Webpack to transform our ES6 and JSX with babel/env.
                 // In the exclude, we're letting Webpack know to ignore the node_modules directory.
                 {
-                    test: /\.(js|jsx)$/,
+                    test: /\.[jt]sx?$/,
                     exclude: /(node_modules|bower_components)/,
                     loader: "babel-loader",
                     options: { presets: ["@babel/env"] },
@@ -65,7 +65,9 @@ module.exports = (env) => {
         },
         // Specifies the extensions that Webpack should resolve.
         // This allows us to import modules without needing to add their extensions.
-        resolve: { extensions: ["*", ".js", ".jsx", ".ts", ".tsx"] },
+        resolve: {
+            extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
+        },
         // Tells Webpack where to put the bundled code.
         // Here we tell Webpack to place it in the dist directory at the root of the project.
         output: {
