@@ -7,6 +7,7 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:react/jsx-runtime",
+        "plugin:jsx-a11y/recommended",
         "plugin:react-hooks/recommended",
         "plugin:@typescript-eslint/recommended",
     ],
@@ -18,7 +19,11 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: "module",
     },
-    plugins: ["react", "@typescript-eslint"],
+    plugins: [
+        "react",
+        "jsx-a11y",
+        "@typescript-eslint",
+    ],
     rules: {
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
