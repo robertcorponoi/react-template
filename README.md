@@ -116,6 +116,12 @@ git fetch --all
 git merge template/main
 ```
 
+## Dependabot
+
+This template uses [Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates) to automatically update out of date packages. The configuration for depedabot can be found at `.github/dependabot.yml`.
+
+See the documentation linked above for more information about Dependabot and how to use it.
+
 ## License
 
 [MIT](./LICENSE)
