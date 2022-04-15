@@ -35,7 +35,7 @@
         "@babel/preset-typescript": "^7.16.7",
         "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
         "@types/preval.macro": "^3.0.0",
-        "@types/react": "^18.0.1",
+        "@types/react": "^18.0.5",
         "@types/react-dom": "^18.0.0",
         "@types/react-redux": "^7.1.22",
         "@types/tailwindcss": "^3.0.9",
