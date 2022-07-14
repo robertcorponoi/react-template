@@ -39,7 +39,7 @@
         "@types/react-dom": "^18.0.0",
         "@types/react-redux": "^7.1.22",
         "@types/tailwindcss": "^3.0.9",
-        "@typescript-eslint/eslint-plugin": "^5.11.0",
+        "@typescript-eslint/eslint-plugin": "^5.30.6",
         "@typescript-eslint/parser": "^5.11.0",
         "autoprefixer": "^10.4.2",
         "babel-loader": "^8.2.2",
