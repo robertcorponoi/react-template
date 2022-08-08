@@ -5,7 +5,7 @@ const BundleAnalyzerPlugin =
 const ReactRefreshTypeScript = require("react-refresh-typescript");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
-const dotenv = require("dotenv").config({ path: path.join(__dirname, ".env") });
+require("dotenv").config({ path: path.join(__dirname, ".env") });
 
 /**
  * Returns the configuration that Webpack should use.

@@ -81,6 +81,21 @@ Environment variables in a `.env` file at the root of the template will be read 
 2. Create a key value pair of `REACT_APP_NAME = "My App Name"`.
 3. Run `npm run develop` to run the Webpack build again. On the home page you should now see the value you assigned to that key in the `.env` file.
 
+**How It Works:**
+
+-   The line `require("dotenv").config({ path: path.join(__dirname, ".env") });` requires the [dotenv](https://github.com/motdotla/dotenv) package which is a package used to load the variables from the `.env` file.
+-   Then, in the `plugins` section we have:
+
+```js
+new webpack.DefinePlugin({
+    "process.env": JSON.stringify(process.env),
+}),
+```
+
+which maps the environment variables loaded in to `process.env` which can be used in components.
+
+-   In the `src/components/AppName.tsx` component, we destructure the `process.env` object to get the key that we want to display and then we render it if available.
+
 ## Scripts
 
 The following scripts are available and can be used in the form of `npm run [script_name]`:
