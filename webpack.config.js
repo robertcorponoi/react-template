@@ -5,6 +5,8 @@ const BundleAnalyzerPlugin =
 const ReactRefreshTypeScript = require("react-refresh-typescript");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
+const dotenv = require("dotenv").config({ path: path.join(__dirname, ".env") });
+
 /**
  * Returns the configuration that Webpack should use.
  *
@@ -88,6 +90,10 @@ module.exports = (env) => {
             isDevelopment && new ReactRefreshWebpackPlugin(),
             // The plugin needed to run the Webpack build analyzer to analyze bundle sizes.
             env.analyze && new BundleAnalyzerPlugin(),
+            // The plugin needed to load env vars into `process.env`.
+            new webpack.DefinePlugin({
+                "process.env": JSON.stringify(process.env),
+            }),
         ].filter(Boolean),
     };
 };
