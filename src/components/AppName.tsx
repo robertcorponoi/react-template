@@ -14,7 +14,7 @@ const AppName = () => {
         <p>
             This is where the name of the React App would display if you set up
             a .env file with an environment variable consisting of
-            REACT_APP_NAME = &quot;React Template&quote;
+            REACT_APP_NAME = &quot;App Name&quot;
         </p>
     );
 };
