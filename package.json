@@ -52,7 +52,7 @@
         "eslint-plugin-react-hooks": "^4.3.0",
         "postcss": "^8.4.16",
         "postcss-loader": "^7.0.1",
-        "prettier": "^2.5.1",
+        "prettier": "^2.8.0",
         "preval.macro": "^5.0.0",
         "react-refresh": "^0.14.0",
         "react-refresh-typescript": "^2.0.3",
