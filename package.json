@@ -59,7 +59,7 @@
         "style-loader": "^3.2.1",
         "tailwindcss": "^3.1.8",
         "ts-loader": "^9.2.5",
-        "webpack": "^5.68.0",
+        "webpack": "^5.77.0",
         "webpack-bundle-analyzer": "^4.4.2",
         "webpack-cli": "^5.0.0",
         "webpack-dev-server": "^4.7.4"
