@@ -51,7 +51,7 @@
         "eslint-plugin-react": "^7.28.0",
         "eslint-plugin-react-hooks": "^4.3.0",
         "postcss": "^8.4.16",
-        "postcss-loader": "^7.0.1",
+        "postcss-loader": "^7.2.3",
         "prettier": "^2.5.1",
         "preval.macro": "^5.0.0",
         "react-refresh": "^0.14.0",
