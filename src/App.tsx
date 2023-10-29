@@ -5,11 +5,11 @@ import Navbar from "./components/Navbar";
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import ReduxPage from "./pages/ReduxPage";
 import NotFoundPage from "./pages/404Page";
 
 import "./App.css";
 import "tailwindcss/tailwind.css";
-import ReduxPage from "./pages/ReduxPage";
 
 const App = () => {
     return (

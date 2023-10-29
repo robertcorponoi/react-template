@@ -1,8 +1,9 @@
 import React, { useMemo, useState } from "react";
 
+import { useAppDispatch, useAppSelector } from "../hooks/stateHooks";
+
 import { setUserName } from "../store/user/userSlice";
 import { selectUserName } from "../store/user/selectors";
-import { useAppDispatch, useAppSelector } from "../hooks/stateHooks";
 
 /**
  * An input that allows the user to change their name.
@@ -43,7 +44,7 @@ const NameChange = () => {
 
     return (
         <div className="flex flex-col mt-4">
-            <p>Don't like the name {userName}? Change It!</p>
+            <p>Don&apos;t like the name {userName}? Change It!</p>
             <div className="flex items-center gap-x-2 mt-3">
                 <input
                     onChange={handleInputChange}
